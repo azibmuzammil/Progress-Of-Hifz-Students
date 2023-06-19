@@ -29,7 +29,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
-     
+        gitHubButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://github.com/azibmuzammil/Progress-Of-Hifz-Students";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(url));
+                startActivity(intent);
+            }
+        });
     }
 }
