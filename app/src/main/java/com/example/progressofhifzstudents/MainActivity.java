@@ -34,7 +34,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, addStudentRecord.class));
             }
         });
-        
+
+        searchStudentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, searchStudent.class));
+            }
+        });
 
         gitHubButton.setOnClickListener(new View.OnClickListener() {
             @Override
